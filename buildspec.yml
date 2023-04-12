@@ -10,7 +10,7 @@ phases:
         commands:
             - echo building file
             - cp index.html /var/www/html/
-    post build:
+    post_build:
         commands:
             - echo configured
 artifacts:
