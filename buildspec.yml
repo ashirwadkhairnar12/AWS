@@ -4,18 +4,18 @@ phases:
 
     install:
            commands:
-            -echo installing webserver
-            -sudo apt update
-            -sudo apt install apache2
+            - echo installing webserver
+            - sudo apt update
+            - sudo apt install apache2
         
     build:
         command:
-            -echo building file
-            -cp index.html /var/www/html
+            - echo building file
+            - cp index.html /var/www/html
 
     post build:
         command:
-            -echo configured
+            - echo configured
       
     artifacts:
         files:
