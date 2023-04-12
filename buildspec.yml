@@ -9,12 +9,12 @@ phases:
             - sudo apt install apache2
         
     build:
-        command:
+           commands:
             - echo building file
-            - cp index.html /var/www/html
+            - cp index.html /var/www/html/
 
     post build:
-        command:
+           commands:
             - echo configured
       
     artifacts:
